@@ -1,19 +1,21 @@
-# Mini-Duel-Game
-Play a turn-based interactive duel game through cmd. The user can 
-- play with a bot
-- play with another user
-- watch two bots play
+# Mini Duel Game
+Play a turn-based interactive duel game through the CLI. The game may be further developed using graphics. 
+The game has three modes:
+1. play with a bot
+2. play with another player
+3. watch two bots play
 
-To win a round, the user must reduce the opponent's HP to zero. 
-To win a game, the user must win at least 3 rounds.
+To win a round, a player must reduce the opponent's HP to zero. 
+To win a game, a player must win at least three rounds.
 
 In each round, there will be indefinite turns. 
-In each turn, a user can choose an action out of four options-
-1. Deal small damage immediately
+In each turn, a player can choose an action out of four options-
+1. Deal minor damage
 2. Harvest energy
 3. Deal massive damage (required a certain amount of energy)
 4. Immediately surrender
 
-To reduce the biased tendency to collect energy, a rule is implemented. If both players decide to collect energy, no one will get it and both will be self-harmed (reduce both players' HPs).
+To balance using minor and massive damage, the following rule is implemented. If both players decide to gather energy at the same turn, both of their HPs are reduced without any gain in their energy bars.
 
-At the end of the game, the user is asked to make a log file or not. The log file will include the actions of a winning player in a particular round. Note that it is not "a particular game". Example- If player A wins the game by winning 3 rounds while player B loses the game but wins 2 rounds, the log file will note the moves of both player A and B of their respective victory.
+At the end of the game, a question is asked whether to create a log file. The log file will include the actions of a winning player in a particular round. Note that it is not <b>a particular game</b>. 
+_Example: If player A wins by winning three rounds while player B loses the game but wins two rounds, the log file will note the moves of both player A and B of their respective victory._
